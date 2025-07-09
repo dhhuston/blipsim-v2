@@ -1,0 +1,60 @@
+.leaflet-container {
+  min-height: 300px;
+  min-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.leaflet-control {
+  font-size: 1rem;
+}
+
+.leaflet-popup-content {
+  font-family: inherit;
+}
+
+/* Trajectory visualization styles */
+.leaflet-interactive {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.leaflet-interactive:hover {
+  opacity: 0.8;
+}
+
+/* Custom marker hover effects */
+.leaflet-marker-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.leaflet-marker-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Landing zone circle styling */
+.leaflet-overlay-pane svg circle {
+  stroke-dasharray: 5, 5;
+  animation: dash 20s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+/* Trajectory polyline styling */
+.leaflet-overlay-pane svg path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Popup styling */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.leaflet-popup-tip {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+} 

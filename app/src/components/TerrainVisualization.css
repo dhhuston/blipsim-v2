@@ -1,0 +1,11 @@
+/* Terrain Visualization Component Styles */
+.map-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.layers-control {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

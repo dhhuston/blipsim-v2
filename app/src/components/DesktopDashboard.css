@@ -1,0 +1,22 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: auto;
+  gap: 10px;
+  height: 100vh;
+}
+
+.map-panel {
+  background-color: #f0f0f0;
+  grid-column: 1 / 2;
+}
+
+.controls-panel {
+  background-color: #d0d0d0;
+  grid-column: 2 / 3;
+}
+
+.telemetry-panel {
+  background-color: #b0b0b0;
+  grid-column: 3 / 4;
+}
